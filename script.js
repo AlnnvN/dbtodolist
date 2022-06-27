@@ -31,7 +31,7 @@ button.addEventListener('click',e=>{
 //functions
 
 function loadNotes(){
-    if(localStorage.length === 0)
+    if(localStorage.getItem("main") === null)
     {
         resetStorage();
     }
